@@ -6,6 +6,10 @@ import CSS from '../media/tailwindcss.png'
 import Nodejs from '../media/nodejs.png'
 import IconReact from '../media/react-js.png'
 import Mysql from '../media/mysql.png'
+import HTML5 from '../media/html.png'
+import CSS3 from '../media/css.png'
+import Workprop from './workprop'
+import Php from '../media/php.png'
 // import 
 
 function Body() {
@@ -64,16 +68,16 @@ function Body() {
 
 
                         <div className=' grid-cols-1 border'>
-                            <div className=' grid-cols-1 border'>
-                                <div className=' flex justify-center p-6'>
-                                    <div className=' border-2 rounded-full shadow-purple-500 shadow-lg p-3'>
-                                        <img src={Nodejs} alt='TailwindIcon' className=' w-24 h-24 text-center hover:animate-spin animate-duration-[100000s] animate-iteration-count-12' />
-                                    </div>
-
+                            <div className=' flex justify-center p-6'>
+                                <div className=' border-2 rounded-full shadow-purple-500 shadow-lg p-3'>
+                                    <img src={Nodejs} alt='TailwindIcon' className=' w-24 h-24 text-center hover:animate-spin animate-duration-[100000s] animate-iteration-count-12' />
                                 </div>
-                                <p className=' text-center text-xl font-extrabold'>Node.Js</p>
+
                             </div>
+                            <p className=' text-center text-xl font-extrabold'>Material UI</p>
                         </div>
+
+
 
                         <div className=' grid-cols-1 border'>
                             <div className=' grid-cols-1 border'>
@@ -101,20 +105,113 @@ function Body() {
 
                         <div className=' grid-cols-1 border'>
                             <div className=' grid-cols-1 border'>
-                                <div className=' flex justif y-center p-6'>
+                                <div className=' flex justify-center p-6'>
                                     <div className=' border-2 rounded-full shadow-purple-500 shadow-lg p-3'>
-                                        <img src={CSS} alt='TailwindIcon' className=' w-24 h-24 text-center hover:animate-spin animate-duration-[100000s] animate-iteration-count-12' />
+                                        <img src={Nodejs} alt='TailwindIcon' className=' w-24 h-24 ;gv  / hover:animate-spin animate-duration-[100000s] animate-iteration-count-12' />
                                     </div>
 
                                 </div>
                                 <p className=' text-center text-xl font-extrabold'>Node.Js</p>
                             </div>
                         </div>
+
+
+                        <div className=' grid-cols-1 border'>
+                            <div className=' grid-cols-1 border'>
+                                <div className=' flex justify-center p-6'>
+                                    <div className=' border-2 rounded-full shadow-purple-500 shadow-lg p-3'>
+                                        <img src={HTML5} alt='TailwindIcon' className=' w-24 h-24 text-center hover:animate-spin animate-duration-[100000s] animate-iteration-count-12' />
+                                    </div>
+
+                                </div>
+                                <p className=' text-center text-xl font-extrabold'>HTML</p>
+                            </div>
+                        </div>
+
+
+                        <div className=' grid-cols-1 border' >
+                            <div className=' grid-cols-1 border'>
+                                <div className=' flex justify-center p-6'>
+                                    <div className=' border-2 rounded-full shadow-purple-500 shadow-lg p-3'>
+                                        <img src={CSS3} alt='TailwindIcon' className=' w-24 h-24 text-center hover:animate-spin animate-duration-[100000s] animate-iteration-count-12' />
+                                    </div>
+
+                                </div>
+                                <p className=' text-center text-xl font-extrabold'>CSS</p>
+                            </div>
+                        </div>
+
+
+                        <div className=' grid-cols-1 border' >
+                            <div className=' grid-cols-1 border'>
+                                <div className=' flex justify-center p-6'>
+                                    <div className=' border-2 rounded-full shadow-purple-500 shadow-lg p-3'>
+                                        <img src={Php} alt='TailwindIcon' className=' w-24 h-24 text-center hover:animate-spin animate-duration-[100000s] animate-iteration-count-12' />
+                                    </div>
+
+                                </div>
+                                <p className=' text-center text-xl font-extrabold'>CSS</p>
+                            </div>
+                        </div>
                     </div>
+
                 </Card>
+            </div>
+
+            <div className=' bg-gradient-to-b from-purple-800 to-purple-600 text-center px-60'>
+
+                <div className=' py-24 '>
+                    <p className=' text-3xl text-white'><strong>CONTACT</strong></p>
+
+                    <p className=' text-2xl p-12 text-slate-100 '>
+                        <ol>
+                            <li>Whatsapp: <a href='https://wa.me/+233547084777' style={{ color: 'blue' }}> +233 547 084 777</a></li>
+                            <li>LinkedIn: <a href='https://www.linkedin.com/agbesi-precious-selasi-8cb' style={{ color: 'blue' }}> Precious Agbesi Selasi</a></li>
+                            <li>Phone: +233 547 084 777</li>
+                            <li>Github: <a href="https://github.com/SelasiMadeItHere" style={{ color: 'blue' }}> SelasiMadeItHere</a></li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
 
 
-                blunder404
+            <div className=' my-24'>
+                <p className=' text-purple-800 text-3xl font-bold text-center'> MY RECENT WORKS</p>
+
+                <div className=' px-12 justify-center'>
+                    <div className=' grid grid-cols-3 p-0 m-0 w-[100%]'>
+                        <div className=' grid-cols-1 border pb-6'>
+                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT Marketplace"} Stack={"React + Nodejs + Tailwind"} image1={WordPress}/>
+                        </div>
+
+                        <div className=' grid-cols-2 border content-center pb-6'>
+                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT Adimssions"} Stack={"WordPress"} />
+                        </div>
+                        <div className=' grid-cols-2 border content-center pb-6'>
+                            <Workprop image={require("../media/AIT Smart School .png")} name={"AIT Smart School"} Stack={"WordPress"} />
+                        </div>
+                        <div className=' grid-cols-2 border content-center pb-6'>
+                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT Adimssions"} Stack={"WordPress"} />
+                        </div>
+
+                        <div className=' grid-cols-3 border pt-[4.5cm] content-center pb-6'>
+                            <Workprop image={require("../media/IRIC-Logo_New-1.png")} name={"IRIC"} Stack={"WordPress"} />
+                        </div>
+
+                        <div className=' grid-cols-1 border content-center pb-6'>
+                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT E-Library"} Stack={"WordPress"} />
+                        </div>
+
+                        <div className=' grid-cols-3 border content-center pb-6'>
+                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT Marketplace"} Stack={"PhP + TailwindCSS + MySQL"} />
+                        </div>
+                        <div className=' grid-cols-1 border content-center pb-6'>
+                            <Workprop image={require("../media/cynthias.jpg")} name={"Cynthia's African Dishes"} Stack={"WordPress"} />
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </>
     )
