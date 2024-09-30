@@ -1,6 +1,10 @@
 import React from 'react'
-import Hero from '../hero-devices.svg'
+
 import { Card } from '@mui/material'
+
+import { marketplace, eLibrary } from './images.js';
+
+import Hero from '../hero-devices.svg'
 import WordPress from '../media/wordpress.png'
 import CSS from '../media/tailwindcss.png'
 import Nodejs from '../media/nodejs.png'
@@ -181,11 +185,11 @@ function Body() {
                 <div className=' px-12 justify-center'>
                     <div className=' grid grid-cols-3 p-0 m-0 w-[100%]'>
                         <div className=' grid-cols-1 border pb-6'>
-                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT Marketplace"} Stack={"React + Nodejs + Tailwind"} image1={WordPress}/>
+                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT Marketplace"} Stack={"React + Nodejs + Tailwind"} images={marketplace}/>
                         </div>
 
                         <div className=' grid-cols-2 border content-center pb-6'>
-                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT Adimssions"} Stack={"WordPress"} />
+                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT Adimssions"} Stack={"WordPress"} images={eLibrary}/>
                         </div>
                         <div className=' grid-cols-2 border content-center pb-6'>
                             <Workprop image={require("../media/AIT Smart School .png")} name={"AIT Smart School"} Stack={"WordPress"} />
