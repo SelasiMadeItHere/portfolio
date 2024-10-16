@@ -12,7 +12,10 @@ module.exports = {
         'regal-blue': '#243c5a',
         'contev-ui' : '#ffffff',
       },
+      animation: {
+        'revolve': 'translate-x-3',
     },
     plugins: [],
   }
+}
 }

@@ -1,9 +1,6 @@
 import React from 'react'
 
 import { Card } from '@mui/material'
-
-import { marketplace, eLibrary } from './images.js';
-
 import Hero from '../hero-devices.svg'
 import WordPress from '../media/wordpress.png'
 import CSS from '../media/tailwindcss.png'
@@ -40,9 +37,9 @@ function Body() {
 
             <div>
 
-                <Card className='  mx-24 border-2 z-10 mt-[-5%] rounded-2xl'>
+                <Card className=' mx-24 border-2 z-10 mt-[-5%] bg-purple-500 rounded-2xl '>
 
-                    <p className=' text-4xl font-extrabold text-center py-12'>My Stack</p>
+                    <p className=' text-4xl font-extrabold text-center py-12 '>My Stack</p>
                     <div className=' grid grid-cols-3 p-0 m-0 w-[100%]'>
 
 
@@ -50,7 +47,7 @@ function Body() {
                         <div className=' grid-cols-1 border'>
                             <div className=' flex justify-center p-6'>
                                 <div className='border-2 rounded-full shadow-purple-500 shadow-lg p-3'>
-                                    <img src={WordPress} alt='ReactIcon' className=' w-24 h-24 text-center hover:animate-spin animate-duration-[100000s] animate-iteration-count-12' />
+                                    <img src={WordPress} alt='ReactIcon' className=' w-24 h-24 text-center hover:animate-ping animate-duration-[1s] animate-iteration-count-12' />
                                 </div>
                             </div>
                             <div>
@@ -87,7 +84,7 @@ function Body() {
                             <div className=' grid-cols-1 border'>
                                 <div className=' flex justify-center p-6'>
                                     <div className=' border-2 rounded-full shadow-purple-500 shadow-lg p-3'>
-                                        <img src={CSS} alt='TailwindIcon' className=' w-24 h-24 text-center hover:animate-spin animate-duration-[100000s] animate-iteration-count-12' />
+                                        <img src={CSS} alt='TailwindIcon' className=' w-24 h-24 text-center hover:translate-y-9 animate-duration-[100000s] animate-iteration-count-12' />
                                     </div>
 
                                 </div>
@@ -185,33 +182,15 @@ function Body() {
                 <div className=' px-12 justify-center'>
                     <div className=' grid grid-cols-3 p-0 m-0 w-[100%]'>
                         <div className=' grid-cols-1 border pb-6'>
-                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT Marketplace"} Stack={"React + Nodejs + Tailwind"} images={marketplace}/>
+                            {/* <Workprop image={require("../media/AIT MAin.png")} name={"AIT Marketplace"} Stack={"React + Nodejs + Tailwind"} /> */}
+                            <Workprop
+                                image={require("../media/AIT MAin.png")}
+                                Stack={"React + Nodejs + Tailwind"}
+                            />
                         </div>
 
-                        <div className=' grid-cols-2 border content-center pb-6'>
-                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT Adimssions"} Stack={"WordPress"} images={eLibrary}/>
-                        </div>
-                        <div className=' grid-cols-2 border content-center pb-6'>
-                            <Workprop image={require("../media/AIT Smart School .png")} name={"AIT Smart School"} Stack={"WordPress"} />
-                        </div>
-                        <div className=' grid-cols-2 border content-center pb-6'>
-                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT Adimssions"} Stack={"WordPress"} />
-                        </div>
 
-                        <div className=' grid-cols-3 border pt-[4.5cm] content-center pb-6'>
-                            <Workprop image={require("../media/IRIC-Logo_New-1.png")} name={"IRIC"} Stack={"WordPress"} />
-                        </div>
 
-                        <div className=' grid-cols-1 border content-center pb-6'>
-                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT E-Library"} Stack={"WordPress"} />
-                        </div>
-
-                        <div className=' grid-cols-3 border content-center pb-6'>
-                            <Workprop image={require("../media/AIT MAin.png")} name={"AIT Marketplace"} Stack={"PhP + TailwindCSS + MySQL"} />
-                        </div>
-                        <div className=' grid-cols-1 border content-center pb-6'>
-                            <Workprop image={require("../media/cynthias.jpg")} name={"Cynthia's African Dishes"} Stack={"WordPress"} />
-                        </div>
 
                     </div>
 
